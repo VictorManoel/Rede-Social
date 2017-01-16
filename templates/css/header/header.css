@@ -1,0 +1,119 @@
+body,html{ height: 100%; padding: 0; margin: 0; background-color: #e3e3e3; font-family: 'Roboto', sans-serif; }
+*:focus{outline:none;}
+
+header{ position: fixed; width: 100%;}
+
+#nav-fix{
+    width: 100%; 
+    height: 60px;
+    background-color: #1abc9c;
+    
+}
+
+.navfix-div{
+    width: 33.3%; 
+    height: 60px;
+    float: left;
+    
+}
+
+.navfix-div ul{
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+ .navfix-li{    
+    display: inline-block; 
+    list-style: none;
+    width: 25%;
+    float: left;
+    
+}
+
+ .navfix-li a{
+    display: block;
+    height: 24px;
+    padding: 18px 0;
+    text-align: center;
+    color: #ecf0f1;
+    cursor: pointer;
+    
+}
+
+.navfix-li a:hover{ background-color: #18ab8e; }
+
+.navfix-user{
+    width: 50px; height: 50px;
+    margin: 5px auto;
+}
+
+.navfix-user img{
+    width: 50px; height: 50px;
+    border-radius: 50%;
+}
+   
+.navfix-lisearch{ display: none; }
+@media screen and (min-width: 580px){    /*display > 580*/
+    .navfix-form div{
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    .navfix-form input{
+        width: 80%; height: 35px;
+        padding: 10px;
+        border: none;
+        margin: 12.5px 0;
+        box-sizing: border-box;
+        float: left;
+        border-radius: 3px 0 0 3px;
+        font-family: 'Roboto', sans-serif !important;
+        color: #7f8c8d;
+
+    }
+
+    .navfix-form button{
+        width: 20%; height: 35px;
+        margin: 12.5px 0;
+        border: none;
+        box-sizing: border-box;
+        float: left;
+        border-radius: 0 3px 3px 0;
+        background-color: #1fdeb9;
+        cursor: pointer;
+        color: #ecf0f1;
+
+    }
+
+    .navfix-form button:hover{ background-color: #1ccdaa; }
+
+}
+
+@media screen and (max-width: 850px){    /*display < 850*/
+    
+    .navfix-divli{ width: 40%; }  
+    
+    .navfix-divuser{ width: 15%; }
+    
+    .navfix-divform{ width: 45%; }
+
+}
+
+@media screen and (max-width: 580px){    /*display < 580*/
+    
+    .navfix-divli{ width: 84%; }  
+    .navfix-li{ width: 20%; }
+    .navfix-lisearch{ display: block; }
+    
+    .navfix-divuser{ width: 16%; }
+    .navfix-user{ width: 30px; height: 30px; margin: 15px auto; }
+    .navfix-user img{ width: 30px; height: 30px;}
+    
+    .navfix-divform{ display: none; }
+
+}

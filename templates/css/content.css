@@ -1,0 +1,125 @@
+.content-container{
+    width: 60%;
+    float: left;
+}
+
+.postform-box{
+    width: 100%;
+    margin: 15px 0;
+
+}
+
+.postform-box textarea{
+    display: block;
+    width: 100%; height: auto;
+    padding: 15px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 3px 3px 0 0;
+    overflow-y: hidden;
+    resize: none;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 15px;
+    color: #7f8c8d;
+    
+}
+
+.postform-box .postform-filelist{
+    width: 100%; height: 0;
+    border: none;
+    box-sizing: border-box;
+    background-color: #fff;
+    overflow: hidden;
+    color: #7f8c8d;
+    -webkit-transition: height 0.4s;
+    -o-transition: height 0.4s;
+    transition: height 0.4s;
+}
+
+.postform-filelist .material-icons{
+    font-size: 18px; 
+    padding: 6px 15px;
+    float: left;
+    
+}
+
+.postform-filelist span{
+    font-size: 15px;
+    line-height: 30px;
+    float: left;
+    
+}
+
+.postform-filelist .clear{
+    font-size: 12px; 
+    background-color: #7f8c8d;
+    padding: 2px;
+    margin: 7px 15px;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer
+    
+}
+
+.postform-filelist .clear:hover{ background-color: #a94442; }
+
+.postform-box .postform-error{
+    width: 100%; height: 0;
+    border: none;
+    box-sizing: border-box;
+    background-color: #f2dede;
+    overflow: hidden;
+    color: #a94442;
+    -webkit-transition: height 0.4s;
+    -o-transition: height 0.4s;
+    transition: height 0.4s;
+}
+
+.postform-error .material-icons{
+    font-size: 18px; 
+    padding: 6px 15px;
+    float: left;
+    
+}
+
+.postform-error span{
+    font-size: 15px;
+    line-height: 30px;
+    
+}
+
+.postform-box .postform-options{
+    width: 100%; height: 50px;
+    padding: 10px 15px;
+    border: none;
+    box-sizing: border-box;
+    background-color: #1abc9c;
+    border-radius: 0 0 3px 3px;
+
+}
+
+.postform-options .postform-lbl{
+    background-color: #1fdeb9;
+    padding: 3px 8px;
+    float: left;
+    border-radius: 3px;
+    color: #ecf0f1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.postform-options .postform-btn{
+    height: 30px;
+    margin: 0 5px;
+    border-radius: 3px;
+    border: none;
+    background-color: #1fdeb9;
+    color: #ecf0f1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.postform-lbl:hover , .postform-btn:hover{ background-color: #1ccdaa; }
+
+@media screen and (max-width: 850px){ .content-container{ width: 65%; }}
+@media screen and (max-width: 580px){ .content-container{ width: 95%; float: none; margin: 0 auto;} }
