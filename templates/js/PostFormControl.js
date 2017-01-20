@@ -2,6 +2,7 @@
 
     var resizingTextareas = [].slice.call(document.querySelectorAll('textarea')),
         len = resizingTextareas.length, 
+        windowHeight = window.innerHeight/2.5,
         i;
 
     for(i = 0; i < len ; i++){
@@ -14,7 +15,7 @@
         this.style.height = 'auto';
         this.style.height = this.scrollHeight+'px';
         this.scrollTop = this.scrollHeight;
-        window.scrollTo(window.scrollLeft,(this.scrollHeight));
+        window.scrollTo(window.scrollLeft, this.scrollHeight-windowHeight);
     }
     
 })();

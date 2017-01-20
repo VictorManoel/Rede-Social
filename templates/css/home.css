@@ -9,6 +9,9 @@
     float: right;
 }
 
+@media screen and (max-width: 850px){ #container{ width: 90%;} .sidebar-container{ width: 35%; }}
+@media screen and (max-width: 580px){ #container{ width: 100%; } .sidebar-container{ display: none;}}
+
 .side-bar{
     width: 80%;
     margin: 15px auto;
@@ -85,6 +88,3 @@
     line-height: 30px;
     padding: 0 15px;
 }
-
-@media screen and (max-width: 850px){ #container{ width: 90%;} .sidebar-container{ width: 35%; }}
-@media screen and (max-width: 580px){ #container{ width: 100%; } .sidebar-container{ display: none;}}

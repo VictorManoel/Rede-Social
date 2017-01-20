@@ -78,9 +78,37 @@
                     </footer>
                 </form>
             </div>
-            
             <article class="feed">
-
+                <section class="feed-post">
+                   
+                    <div class="feed-post-header">
+                      
+                       <div class="post-header-pic">
+                           <img src="" alt="">
+                       </div>
+                       <div class="post-header-profile">
+                            <div class="post-header-profile-name">
+                               <a href="<?php echo HOST;?>user" title="Nome Nome">
+                                   Name Name
+                               </a> 
+                            </div>
+                            <div class="post-header-profile-date">11 - 02 - 2001</div>
+                       </div>
+                       <div class="post-header-menu">
+                           
+                       </div> 
+                                              
+                    </div>
+                    <div class="feed-post-text-container">
+                        <p class="post-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet maxime tempore, dolore necessitatibus fugiat vero repellendus, officiis modi, doloremque inventore error quisquam. Tenetur vitae vero officiis voluptatem nemo ducimus error?
+                        </p>
+                    </div>
+                    <div class="feed-post-footer">
+                        
+                    </div>
+                    
+                </section>       
             </article>
         </section>  
     </section>
