@@ -10,13 +10,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="<?php echo HOST;?>templates/css/home.css" rel="stylesheet">
     <link href="<?php echo HOST;?>templates/css/content.css" rel="stylesheet">
+    <link href="<?php echo HOST;?>templates/css/postForm.css" rel="stylesheet">
     
 </head>
 <body>
     <?php 
-        include 'layout/header/headerOn.php';
+        include 'layout/header/header.php';
     ?>
-    
     <section id="container">
         <section class="sidebar-container">
             <aside class="side-bar"> 
@@ -52,32 +52,35 @@
         </section>
         
         <section class="content-container">
-            <div class="postform-box">
-                <form>
-                    <textarea placeholder="Whats on your mind?" name="pit" rows="2"></textarea>
-                    <input type="file" id="postform-inputpic" name="pip" style="display:none;">
+           
+            <section class="postform-content">
+                <form action="" method="post" class="postform">
+                    <textarea class="postform-text" name="pit-clan" rows="2" placeholder="What are you doing? ;)" title="What are you doing? ;)"></textarea>
+                    <input type="file" id="postform-inputpic" name="pip-clan" style="display:none;">
 
                     <div class="postform-filelist">
                         <i class="material-icons">image</i>
-                        <span></span>
+                            <span class="postform-file-name">Img.jpg</span>
                         <i class="material-icons clear">clear</i>
                     </div>
 
                     <div class="postform-error">
                         <i class="material-icons">error</i>
-                        <span>Write something...</span>
+                        <span class="postform-error-text">Write something... :/</span>
                     </div>
 
                     <footer class="postform-options">
-                        <label for="postform-inputpic" title="Choose a photo"> 
-                            <i class="material-icons postform-lbl">photo_camera</i>
+                        <label for="postform-inputpic" class="postform-piclabel" title="An image is worth a thousand words! ;)"> 
+                            <i class="material-icons">add_a_photo</i>
                         </label>
-                        <button type="submit" class="postform-btn" title="Send">
+                        <button type="submit" class="postform-submit" title="Send now!">
+                            <span>Send</span>
                             <i class="material-icons">send</i>
                         </button>
                     </footer>
                 </form>
-            </div>
+            </section>
+            
             <article class="feed">
                 <section class="feed-post">
                    
@@ -108,7 +111,7 @@
                         
                     </div>
                     
-                </section>       
+                </section>
             </article>
         </section>  
     </section>

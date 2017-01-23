@@ -1,12 +1,12 @@
 body,html{ 
     height: 100%; 
     padding: 0; margin: 0; 
-    background-color: #e3e3e3; 
+    background-color: #fafafa; 
     font-family: 'Roboto', sans-serif; 
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     
 }
-*:focus{outline:none;}
+button, textarea, input{outline:none;}
 
 .header{
     position: fixed;
@@ -16,12 +16,29 @@ body,html{
 
 }
 
-.header-row{
-    width: 33.3%; 
+.header-content{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+.header-nav-content{
+    width: 60%;
+    height: auto;
+    float: left;
+
+}
+
+.header-row{ 
     height: 60px;
     float: left;
 
 }
+
+.header-row-links{width: 60%;}
+.header-row-right{width: 40%;}
+.header-row-search{width: 40%;}
 
 .header-nav{
     width: 100%; 
@@ -33,10 +50,10 @@ body,html{
 @media screen and (min-width: 450px){
 
     .nav-list{
-        position: relative;
-        padding: 0;
-        width: 90%;
+        position: relative; 
+        width: 100%;
         height: 60px;
+        padding: 0;
         margin: 0 auto;    
     }
 
@@ -46,7 +63,7 @@ body,html{
         list-style: none;
         width: 25%; 
         height: 60px;
-        float: left;
+        float: left;       
         text-align: center;
     }
 
@@ -68,7 +85,6 @@ body,html{
         top: 65px;
         right: 5px; 
     }
-
 }
 
 /*
@@ -89,21 +105,21 @@ body,html{
     height: 60px;
     float: left;
     list-style: none;
-    text-align: center;
+    text-align: right;
 }
 
 .nav-right-search, .nav-right-menu{ display: none;}
 
 .nav-right-image{
-    width: 50px;
-    margin: 5px 0;
+    width: 35px;
+    margin: 12.5px 0;
     border-radius: 50%;
 }
 
 /*
    Search
 */
-@media screen and (min-width: 650px){
+@media screen and (min-width: 690px){
 
     .header-search{
         width: 90%;
@@ -112,6 +128,8 @@ body,html{
     }
 
     .header-search-input{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         box-sizing: border-box;
         width: 80%;
         height: 35px;
@@ -124,6 +142,8 @@ body,html{
     }
 
     .header-search-submit{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         box-sizing: border-box;
         width: 20%;
         height: 35px;
@@ -139,49 +159,55 @@ body,html{
 
     .header-search-submit:hover{ background-color: #1ccdaa; }
     .header-search-submit:active{ background-color: #16caa6; }
-
 }
 /*
    Breack points
 */
 @media screen and (max-width: 850px){
+   
+    .header-content{ width: 90%;}
+    .header-nav-content{ width: 65%;}
+    
+    .header-row-links{ width: 65%; }
 
-    .header-row-links{ width: 40%; }
-    .nav-list{ width: 100%;}
+    .header-row-right{ width: 35%; }
 
-    .header-row-right{ width: 20%; }
-
-    .header-row-search{ width: 40%; }
-
+    .header-row-search{ width: 35%; }
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 690px){
 
+    .header-nav-content{ width: 100%;}
+    
     .header-row-links{ width: 60%; }
-    .nav-list{ width: 100%;}
     .nav-element{ width: 20%;}
     .nav-element-search{ display: block;}
 
     .header-row-right{ width: 40%; }
+    .nav-right-element{ text-align: center;}
+    .nav-right-image{
+        width: 45px;
+        margin: 7.5px 0;
+    }
 
     .header-row-search{ display: none;}
-
+    
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 580px){
 
+    .header-content{ width: 95%;}
     .header-row-links{ width: 70%; }
-
     .header-row-right{ width: 30%; }
-
 }
 
 @media screen and (max-width: 450px){ /* Mobile */
     
-    .header-row-links{ width: 40%;}
+    .header-content{ width: 100%;}
+    .header-row-links{ width: 30%;}
     .nav-list{ display: none;}
 
-    .header-row-right{ width: 60%; }
+    .header-row-right{ width: 70%; }
     
     .nav-right-list{ width: 80%; float: right;}
     .nav-right-element{ width: 33.3%;} 
@@ -229,6 +255,8 @@ body,html{
     .header-context-container{ width: 100%; }
 
     .header-navright-btn{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         box-sizing: border-box;
         width: 30px; 
         height: 30px;
@@ -246,7 +274,6 @@ body,html{
     .header-navright-menu{
         top: 50px;
         right: 10px; 
-
     }
     
 }

@@ -1,0 +1,164 @@
+.postform-content{
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.postform{
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+}
+
+.postform-text{
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    line-height: 15px;
+    border: none;
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #444;
+}
+
+.postform-filelist{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 0;
+    padding: 0 15px;
+    background-color: #fff;
+    overflow: hidden;
+    -webkit-transition: height 0.4s;
+    -o-transition: height 0.4s;
+    transition: height 0.4s;
+}
+
+.postform-filelist .material-icons{
+    font-size: 18px;
+    margin: 6px 0;
+    float: left;
+    color: #7f8c8d;
+}
+
+.postform-filelist .postform-file-name{
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0 8px;
+    float: left;
+    color: #7f8c8d;
+}
+
+.postform-filelist .clear{
+    font-size: 12px; 
+    background-color: #7f8c8d;
+    padding: 2px;
+    margin: 7px 1px;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer
+}
+
+.postform-filelist .clear:hover{ background: #e74c3c; }
+.postform-filelist .clear:active{ background-color: #c0392b;}
+
+.postform-error{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 0;
+    padding: 0 15px;
+    background: #e74c3c;  
+    overflow: hidden;
+    -webkit-transition: height .4s;
+    -o-transition: height .4s;
+    transition: height .4s;
+
+}
+
+.postform-error .material-icons{
+    font-size: 18px;
+    margin: 6px 0;
+    float: left;
+    color: #fff;
+}
+
+.postform-error .postform-error-text{
+    font-size: 15px;
+    line-height: 30px;
+    padding-left: 5px;
+    float: left;
+    color: #fff;
+}
+
+.postform-options{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: calc(100% - 30px);
+    height: 60px;
+    padding: 15px 0;
+    border-top: 1px solid #ebebeb;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0 0 3px 3px;
+
+}
+
+.postform-piclabel{
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: left;
+    color: #8f8f8f;
+    cursor: pointer;
+}
+.postform-piclabel:hover{ color: #767676; }
+
+.postform-piclabel .material-icons{ font-size: 30px; }
+
+.postform-submit{
+    width: auto;
+    height: 30px;
+    padding: 0 10px;
+    border: none;
+    float: right;
+    background-color: #34495e;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.postform-submit:active{ background-color: #2c3e50; }
+
+.postform-submit span{
+    display: block;
+    padding: 6px 0;
+    margin-right: 5px;
+    font-size: 15px;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+
+}
+
+.postform-submit .material-icons{
+    padding: 3px 0;
+    color: #fff;
+}
